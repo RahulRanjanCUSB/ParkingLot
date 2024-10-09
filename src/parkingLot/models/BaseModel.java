@@ -1,5 +1,8 @@
 package parkingLot.models;
 
+import java.sql.Time;
+import java.util.Date;
+
 public class BaseModel {
     private int id;
 

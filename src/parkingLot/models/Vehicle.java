@@ -2,20 +2,20 @@ package parkingLot.models;
 
 public class Vehicle {
     private int id;
-    private string number;
-    private string color;
+    private String number;
+    private String color;
 
     public VehicleType getVehicleType() {
         return vehicleType;
     }
 
-    public string getColor() {
+    public String getColor() {
         return color;
     }
 
     private VehicleType vehicleType;
 
-    public string getNumber() {
+    public String getNumber() {
         return number;
     }
 
@@ -27,11 +27,11 @@ public class Vehicle {
         this.id = id;
     }
 
-    public void setNumber(string number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
-    public void setColor(string color) {
+    public void setColor(String color) {
         this.color = color;
     }
 
