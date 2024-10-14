@@ -1,14 +1,14 @@
 package parkingLot.models;
 
 import java.sql.Time;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class BaseModel {
     private int id;
 
     // Audit columns
-    private Time CreatedAt;
-    private Time UpdatedAt;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
     private String createdBy;
     private String updatedBy;
 
@@ -20,20 +20,20 @@ public class BaseModel {
         this.id = id;
     }
 
-    public Time getCreatedAt() {
-        return CreatedAt;
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
     }
 
-    public void setCreatedAt(Time createdAt) {
-        CreatedAt = createdAt;
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
     }
 
-    public Time getUpdatedAt() {
-        return UpdatedAt;
+    public LocalDateTime getUpdatedAt() {
+        return updatedAt;
     }
 
-    public void setUpdatedAt(Time updatedAt) {
-        UpdatedAt = updatedAt;
+    public void setUpdatedAt(LocalDateTime updatedAt) {
+        this.updatedAt = updatedAt;
     }
 
     public String getCreatedBy() {

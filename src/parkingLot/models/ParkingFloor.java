@@ -3,6 +3,9 @@ package parkingLot.models;
 import java.util.List;
 
 public class ParkingFloor extends BaseModel{
+    private int floorNumber;
+    private List<ParkingSpot> parkingSpots;
+    private Status status;
     public int getFloorNumber() {
         return floorNumber;
     }
@@ -26,8 +29,4 @@ public class ParkingFloor extends BaseModel{
     public void setStatus(Status status) {
         this.status = status;
     }
-
-    private int floorNumber;
-    private List<ParkingSpot> parkingSpots;
-    private Status status;
 }

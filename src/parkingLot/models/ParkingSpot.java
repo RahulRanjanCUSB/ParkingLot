@@ -1,6 +1,10 @@
 package parkingLot.models;
 
 public class ParkingSpot extends BaseModel{
+    private int number;
+    private VehicleType supportedVehicleType;
+    private Status status;
+    private Vehicle vehicle;
     public int getNumber() {
         return number;
     }
@@ -33,8 +37,13 @@ public class ParkingSpot extends BaseModel{
         this.vehicle = vehicle;
     }
 
-    private int number;
-    private VehicleType supportedVehicleType;
-    private Status status;
-    private Vehicle vehicle;
+    @Override
+    public String toString() {
+        return "ParkingSpot{" +
+                "number=" + number +
+                ", supportedVehicleType=" + supportedVehicleType +
+                ", status=" + status +
+                ", vehicle=" + vehicle +
+                '}';
+    }
 }

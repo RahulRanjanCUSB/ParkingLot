@@ -9,6 +9,16 @@ public class Gate extends BaseModel{
     private GateType gateType;
     private int floorNumber;
 
+    public int getParkingLotId() {
+        return parkingLotId;
+    }
+
+    public void setParkingLotId(int parkingLotId) {
+        this.parkingLotId = parkingLotId;
+    }
+
+    private int parkingLotId;
+
     public int getGateNumber() {
         return gateNumber;
     }
