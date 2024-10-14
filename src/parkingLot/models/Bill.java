@@ -1,6 +1,5 @@
 package parkingLot.models;
 
-import javax.security.auth.kerberos.KerberosTicket;
 import java.time.LocalDateTime;
 
 public class Bill extends BaseModel{

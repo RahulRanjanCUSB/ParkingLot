@@ -3,6 +3,11 @@ package parkingLot.models;
 import java.util.List;
 
 public class ParkingLot extends BaseModel {
+    private List<ParkingFloor> parkingFloors;
+    private List<Gate> gates;
+    private int capacity;
+    private String address;
+    private Status status;
     public List<ParkingFloor> getParkingFloors() {
         return parkingFloors;
     }
@@ -43,9 +48,5 @@ public class ParkingLot extends BaseModel {
         this.status = status;
     }
 
-    private List<ParkingFloor> parkingFloors;
-    private List<Gate> gates;
-    private int capacity;
-    private String address;
-    private Status status;
+
 }
